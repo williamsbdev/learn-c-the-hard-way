@@ -5,4 +5,4 @@ clean:
 	rm -rf ex1.dSYM
 
 all:
-	cc -Wall -g ex1.c -o ex1
+	cc -Wall ex1.c -o ex1
