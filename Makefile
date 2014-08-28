@@ -1,8 +1,11 @@
-CFLAGS=-Wall -g
+CFLAGS=-Wall
+SRCS = $(wildcard *.c)
+OBJS = $(patsubst %.C,%.o,$(SRCS))
 
 clean:
-	rm -f ex1
-	rm -rf ex1.dSYM
+	rm -f *.o
+	rm -rf *.dSYM
 
 all:
-	cc -Wall ex1.c -o ex1
+	cc -Wall ex1.c -o ex1.o
+	cc -Wall ex3.c -o ex3.o
